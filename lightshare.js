@@ -55,9 +55,9 @@ lightshare.prototype.openHandler = function(obj) {
 			e.preventDefault();
 			e.stopPropagation();
 			var tweetUrl = "https://twitter.com/intent/tweet?source=lightshare";
-			if(copy.length > 0) { tweetUrl += "&text="+copy; }
-			if(url.length > 0) { tweetUrl += "&url="+url; }
-			if(via.length > 0) { tweetUrl += "&via="+via; }
+			if(copy.length > 0) { tweetUrl += "&text="+encodeURIComponent(copy); }
+			if(url.length > 0) { tweetUrl += "&url="+encodeURIComponent(url); }
+			if(via.length > 0) { tweetUrl += "&via="+encodeURIComponent(via); }
 			window.open(tweetUrl,"_blank","status=0,toolbar=0,location=1,menubar=0,directories=0,resizable=0,scrollbars=0,height=240,width=640");
 		});		
 		var likeUrl = "https://www.facebook.com/plugins/like.php?href="+url+"&send=false&layout=button_count&width=100&show_faces=false&action=like&colorscheme=light&height=21&appId=258645120881596";
