@@ -15,5 +15,5 @@ It calls up the facebook like with an iframe, alas there isn't just
 some url you can use like the twitter intents.
 
 ### Usage
-  <div data-copy="Check out this really great website" data-url="http://www.google.com" data-via="googlebot">Share link to google</div>
-  <script src="[path to lightshare]"></script>
+    <div data-copy="Check out this really great website" data-url="http://www.google.com" data-via="googlebot">Share link to google</div>
+    <script src="[path to lightshare]"></script>
