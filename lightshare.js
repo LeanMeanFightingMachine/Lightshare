@@ -32,6 +32,10 @@ lightshare.init = function() {
 			$(obj).bind('mouseenter',function(e) {
 				self.openHandler(obj);
 			});
+			$(obj).bind('click',function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+			});
 		});
 	}
 	return this.instance;
