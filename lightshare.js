@@ -8,7 +8,7 @@ lightshare.init = function() {
 		
 		self.isOpen = false;
 		
-		$('body').prepend('<style>#lightshare { width:174px; height:51px; font-family: Tahoma, sans-serif; font-size: 13px; color:#999; display:table;position:absolute;top:-100px;border-radius:6px;padding:3px;background:#fff; border: 1px solid #e0e0e0;-webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);} #lightshare .title, #lightshare .service { display:table-cell; padding: 3px; } #lightshare-facebook { border:none; overflow:hidden; width:100px; height:21px; } .services { display: table-row; } #lightshare-facebook { position: relative; top: 1; } </style>');	
+		$('body').prepend('<style>#lightshare { width:174px; height:51px; font-family: Tahoma, sans-serif; font-size: 13px; color:#999; display:table;position:absolute;top:-100px;border-radius:6px;padding:3px;background:#fff; border: 1px solid #e0e0e0;-webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);} #lightshare img { vertical-align: baseline; } #lightshare .title, #lightshare .service { display:table-cell; padding: 3px; } #lightshare-facebook { border:none; overflow:hidden; width:100px; height:21px; } .services { display: table-row; } #lightshare-facebook { position: relative; top: 1px; } </style>');	
 		$('body').append('<div id="lightshare">'+
 			'<div class="title">Share:</div>'+
 			'<div class="services">'+
