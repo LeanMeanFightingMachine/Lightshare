@@ -72,8 +72,11 @@ lightshare.prototype.openHandler = function(obj) {
 		
 		var offset = $(obj).offset();
 		
-		if($(self.lightshareDO).outerWidth()+offset['left'] > $(window).width()) { offset['left'] = $(window).width()-$(self.lightshareDO).outerWidth(); }
-		if($(self.lightshareDO).outerHeight()+offset['top'] > $(window).height()) { offset['top'] = $(window).height()-$(self.lightshareDO).outerHeight(); }
+		if($(self.lightshareDO).outerWidth()+offset['left'] > $(window).scrollLeft() + $(window).width()) { offset['left'] = $(window).scrollLeft() + $(window).width() -$(self.lightshareDO).outerWidth(); }
+		if($(self.lightshareDO).outerHeight()+offset['top'] > $(window).scrollTop() + $(window).height()) { offset['top'] = $(window).scrollTop() + $(window).height() -$(self.lightshareDO).outerHeight(); }
+		if(offset['left'] < $(window).scrollLeft()) { offset['left'] = $(window).scrollLeft(); }
+		if(offset['top'] < $(window).scrollTop()) { offset['top'] = $(window).scrollTop(); }
+		
 		
 		self.lightshareDO.css({'left':offset['left'],'top':offset['top']});
 	}	
